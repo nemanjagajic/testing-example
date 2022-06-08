@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import root from 'react-shadow'
+import { useEffect } from "react"
 
 function App() {
+
+  // useEffect(() => {
+  //   const someDiv = document.createElement("div")
+  //   someDiv.innerText = "Nemanja"
+  //   const iframe = document.getElementsByTagName("iframe")[0]
+  //   console.log({ iframe })
+  //   iframe.contentWindow.document.getElementsByTagName("body")[0].appendChild(someDiv)
+  // }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ height: "100vh" }}>
+      <div>Something above the iframe</div>
+      <iframe
+        title="revpowerIframe"
+        style={{ width: "400px", height: "400px" }}
+      />
+      {/*<root.div>*/}
+      {/*  <div>In shadow dom</div>*/}
+      {/*</root.div>*/}
+      <div>Below the iframeeeee</div>
     </div>
   );
 }
