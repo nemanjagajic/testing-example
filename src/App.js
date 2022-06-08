@@ -18,6 +18,7 @@ function App() {
       <iframe
         title="revpowerIframe"
         style={{ width: "400px", height: "400px" }}
+        src={"http://46.101.119.178:3000/"}
       />
       {/*<root.div>*/}
       {/*  <div>In shadow dom</div>*/}
